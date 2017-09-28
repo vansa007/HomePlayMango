@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playAction(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Mango", message: "Are you sure want to play Mango?", preferredStyle: .alert)
+        let posBtn = UIAlertAction(title: "Let's play", style: .default, handler: nil)
+        let negBtn = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(posBtn)
+        alert.addAction(negBtn)
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }
 
